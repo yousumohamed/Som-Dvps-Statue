@@ -1,54 +1,57 @@
-===============================================================================
-SOMALIA DEVOPS STATUE - CORE INFRASTRUCTURE TELEMETRY DAEMON
-===============================================================================
-Initial Release Date : January 15, 2009
-Author               : Yusuf Mohamed <yousumohamed@github>
-Website              : http://yusuf.somdvps.org
-Architecture         : x86 / POSIX / Linux 2.6 Kernel
-Licence              : GNU General Public License v2 (GPLv2)
-===============================================================================
+```text
+================================================================================
+          SOMALIA DEVOPS STATUE - CORE TELEMETRY DAEMON (v0.1.0)
+================================================================================
 
-[1.0] OVERVIEW
--------------------------------------------------------------------------------
-Som-Dvps-Statue is a lightweight system daemon designed for Linux and Unix-like
-servers to trace local network activity, system load, and memory usage.
+Initial Release : January 15, 2009
+Lead Author     : Yusuf Mohamed <yousumohamed>
+Website         : [http://yusuf.somdvps.org](http://yusuf.somdvps.org)
+Target Arch     : x86 / POSIX / Linux Kernel 2.6
+Licence         : GNU General Public License v2 (GPLv2)
 
-Designed for maximum efficiency on minimal resources. "Only intelligent 
-engineers bend system constraints."
+--------------------------------------------------------------------------------
+[1.0] SYSTEM OVERVIEW
+--------------------------------------------------------------------------------
+Som-Dvps-Statue is an enterprise Linux system telemetry daemon. It records 
+kernel event traces, packet routes, and CPU cycle footprints on low-spec 
+nodes with zero overhead.
 
-[2.0] REQUIREMENTS
--------------------------------------------------------------------------------
-* GCC 4.3 or higher
-* GNU Make 3.81
-* Perl 5.10.0
-* Python 2.6+
-* Linux Kernel 2.6.18+
+"Only intelligent engineers bend system constraints."
 
-[3.0] INSTALLATION & BUILD INSTRUCTIONS
--------------------------------------------------------------------------------
-To compile and install the telemetry daemon on your server:
+--------------------------------------------------------------------------------
+[2.0] SYSTEM REQUIREMENTS
+--------------------------------------------------------------------------------
+  * GCC 4.3+ Compiler
+  * GNU Make 3.81
+  * Perl 5.10.0 / Python 2.6+
+  * Linux Kernel 2.6.18+
+
+--------------------------------------------------------------------------------
+[3.0] BUILD & INSTALLATION
+--------------------------------------------------------------------------------
+To compile and deploy the telemetry binary from source:
 
     $ tar -zxvf som-dvps-statue-0.1.0.tar.gz
     $ cd som-dvps-statue-0.1.0/
-    $ ./configure --prefix=/usr/local
-    $ make
+    $./configure --prefix=/usr/local$ make
     # make install
 
+--------------------------------------------------------------------------------
 [4.0] CONFIGURATION
--------------------------------------------------------------------------------
-Edit /etc/statue/statue.conf to adjust log intervals:
+--------------------------------------------------------------------------------
+Adjust daemon settings in /etc/statue/statue.conf:
 
-    # /etc/statue/statue.conf - Configuration file
     INTERVAL_SECONDS=60
     LOG_FILE=/var/log/statue_activity.log
     ENABLE_REMOTE_TRACE=0
 
-[5.0] CONTACT & MAINTAINER
--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+[5.0] MAINTAINER CONTACT
+--------------------------------------------------------------------------------
 Lead Architect : Yusuf Mohamed
-Web           : http://yusuf.somdvps.org
-GitHub        : http://github.com/yousumohamed
+Portfolio      : [http://yusuf.somdvps.org](http://yusuf.somdvps.org)
+GitHub Profile : [http://github.com/yousumohamed](http://github.com/yousumohamed)
 
-===============================================================================
-(C) Copyright 2009 Yusuf Mohamed. All rights reserved.
-===============================================================================
+================================================================================
+                 (C) Copyright 2009 Yusuf Mohamed. All rights reserved.
+================================================================================
