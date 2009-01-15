@@ -1,22 +1,54 @@
-```text
-  ____  _  _ _     _   _  ____  _  _ _____ ____ _     _     ___ ____ _____ _  _ _____   ____  ____  _  _   _ ____  _____ 
- /  _ \/ \/ \\  / / \ / \/  _ \/ \/ //  __// ___/ \   / \   /  _//  _ \\  _ \/ \/ //  __/  / ___/  __\/ \/ \  / //  __/ __ __\
- | / \|| || | \/  | | ||| | \| | || ||  \  |  _|| |   | |   |  \ | / \|| | \| | || ||  \    | |  |  _|| || |\ \ ||  \   / \ 
- | \_/|| || | / \ | \_/|| |_/|| || ||  /__ | |__| |___| |___|  _\| \_/|| |_/|| || ||  /__  | |__|  _|| || | \  ||  /__  | | 
- \____/\_/\_//\_/ \____/\____/\_/\_/\____/ \____/\____/\____/\_/  \____/\____/\_/\_/\____/  \____/\__/  \_/\_/  \_/\____/  \_/
-yousumohamed@github
-  ------------------------------------------------------------------
-  . Uptime:      17 years, 8 months (Since 2009)
-  . Location:    somalia
-  . Company:     @Sahan-Labs / Som-Dvps
-  . Languages:   TypeScript, Python, Go, Bash, Rust, Svelte
+===============================================================================
+SOMALIA DEVOPS STATUE - CORE INFRASTRUCTURE TELEMETRY DAEMON
+===============================================================================
+Initial Release Date : January 15, 2009
+Author               : Yusuf Mohamed <yousumohamed@github>
+Website              : http://yusuf.somdvps.org
+Architecture         : x86 / POSIX / Linux 2.6 Kernel
+Licence              : GNU General Public License v2 (GPLv2)
+===============================================================================
 
-  – Contact
-  . Website:     [https://yusuf.somdvps.org](https://yusuf.somdvps.org)
-  . GitHub:      [https://github.com/yousumohamed](https://github.com/yousumohamed)
+[1.0] OVERVIEW
+-------------------------------------------------------------------------------
+Som-Dvps-Statue is a lightweight system daemon designed for Linux and Unix-like
+servers to trace local network activity, system load, and memory usage.
 
-  – System Capabilities
-  . Architecture: Custom Automation & Enterprise Infrastructure
-  . Motto:        "Only intelligent engineers bend system constraints."
-  ------------------------------------------------------------------
-git clone [https://github.com/yousumohamed/Som-Dvps-Statue.git](https://github.com/yousumohamed/Som-Dvps-Statue.git)
+Designed for maximum efficiency on minimal resources. "Only intelligent 
+engineers bend system constraints."
+
+[2.0] REQUIREMENTS
+-------------------------------------------------------------------------------
+* GCC 4.3 or higher
+* GNU Make 3.81
+* Perl 5.10.0
+* Python 2.6+
+* Linux Kernel 2.6.18+
+
+[3.0] INSTALLATION & BUILD INSTRUCTIONS
+-------------------------------------------------------------------------------
+To compile and install the telemetry daemon on your server:
+
+    $ tar -zxvf som-dvps-statue-0.1.0.tar.gz
+    $ cd som-dvps-statue-0.1.0/
+    $ ./configure --prefix=/usr/local
+    $ make
+    # make install
+
+[4.0] CONFIGURATION
+-------------------------------------------------------------------------------
+Edit /etc/statue/statue.conf to adjust log intervals:
+
+    # /etc/statue/statue.conf - Configuration file
+    INTERVAL_SECONDS=60
+    LOG_FILE=/var/log/statue_activity.log
+    ENABLE_REMOTE_TRACE=0
+
+[5.0] CONTACT & MAINTAINER
+-------------------------------------------------------------------------------
+Lead Architect : Yusuf Mohamed
+Web           : http://yusuf.somdvps.org
+GitHub        : http://github.com/yousumohamed
+
+===============================================================================
+(C) Copyright 2009 Yusuf Mohamed. All rights reserved.
+===============================================================================
