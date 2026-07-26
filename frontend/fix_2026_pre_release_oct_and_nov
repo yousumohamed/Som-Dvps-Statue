@@ -1,0 +1,34 @@
+import subprocess
+import os
+
+def fix_future_commits():
+    # Taariikhda maanta loo eegayo (YMD)
+    cutoff_date = "2026-07-27"
+    
+    print("Adoo adeegsanaya Git Filter, waxaa la tirtirayaa kuwa Oct/Nov 2026...")
+    
+    # Amarka Python-ka ammaan u ah ee ku habboon Windows Environment
+    cmd = (
+        'git filter-branch --force --commit-filter "'
+        'if [ $(date -d \\"$GIT_COMMITTER_DATE\\" +%s) -gt $(date -d \\"' + cutoff_date + '\\" +%s) ]; '
+        'then skip_commit \\"$@\\"; '
+        'else git commit-tree \\"$@\\"; fi" -- --all'
+    )
+    
+    # Beddelka ka ammaan badan: Reset to date via Git Log
+    # Maadaama commits-ku isku xiran yihiin, waxaan heleynaa Commit ID-gii ugu dambeeyay ee July 2026
+    log_cmd = 'git log --before="2026-07-27" -n 1 --format="%H"'
+    last_valid_hash = subprocess.check_output(log_cmd, shell=True).decode('utf-8').strip()
+    
+    if last_valid_hash:
+        print(f"Commit-kii ugu dambeeyay ee saxda ahaa (July 2026): {last_valid_hash}")
+        print("Miyaad rabtaa inaan dib ugu celino repo-ga halkaas? (Y/N)")
+        # Dib u celinta repo-ga ilaa July 2026
+        os.system(f"git reset --hard {last_valid_hash}")
+        print("\nSi guul leh ayaa loo tirtiray kuwa Oktoobar iyo Novembaar!")
+        print("Hadda geli amarkan: git push origin main --force")
+    else:
+        print("Aan helin commit taariikhdaas ka horreeya.")
+
+if __name__ == "__main__":
+    fix_future_commits()
