@@ -1,23 +1,24 @@
-```text
-  ___                     __            _                 
- |   \  ___  _d88b.  _  _/  |  ___  ___| |_  ___  _ _ ___ 
- | |) |/ \ \|  _  / / \| |  | / \ \/ __|  _ \/ \ \| '_/ -_)
- |___/ \_/\_\_| |_| \_/|_|  |_\_/\_\___/\__/_\_/\_\_| \___|
- 
- +-----------------------------------------------------------------------------+
- ¦  yousumohamed@github                                                        ¦
- +-----------------------------------------------------------------------------¦
- ¦ . Uptime:      17 years, 8 months (Since 2009)                             ¦
- ¦ . Location:    Somalia                                                      ¦
- ¦ . Status:      Lead DevOps & Cybersecurity Architect                        ¦
- ¦ . Languages:   TypeScript, Python, Go, Bash, Rust                           ¦
- ¦                                                                             ¦
- ¦ – Contact & Links --------------------------------------------------------- ¦
- ¦ . Website:     [https://yusuf.somdvps.org](https://yusuf.somdvps.org)                                    ¦
- ¦ . GitHub:      [https://github.com/yousumohamed](https://github.com/yousumohamed)                              ¦
- ¦                                                                             ¦
- ¦ – System Capabilities ----------------------------------------------------- ¦
- ¦ . Architecture: Custom Automation & Enterprise Security Infrastructure       ¦
- ¦ . Motto:        "Only intelligent engineers bend system constraints."       ¦
- +-----------------------------------------------------------------------------+
+<div align="center">
 
+### ? System Status & Telemetry ?
+
+```text
+  yousumohamed@github
+  ------------------------------------------------------------------
+  . Uptime:      17 years, 8 months (Since 2009)
+  . Location:    somalia
+  . Company:     @Sahan-Labs / Som-Dvps
+  . Languages:   TypeScript, Python, Go, Bash, Rust, Svelte
+
+  – Contact
+  . Website:     yusuf.somdvps.org
+  . GitHub:      [github.com/yousumohamed](https://github.com/yousumohamed)
+
+  – System Capabilities
+  . Architecture: Custom Automation & Enterprise Infrastructure
+  . Note:         "Only intelligent engineers bend system constraints."
+  ------------------------------------------------------------------# Clone repository
+git clone [https://github.com/yousumohamed/Som-Dvps-Statue.git](https://github.com/yousumohamed/Som-Dvps-Statue.git)
+
+# Clone repository
+git clone [https://github.com/yousumohamed/Som-Dvps-Statue.git](https://github.com/yousumohamed/Som-Dvps-Statue.git)
